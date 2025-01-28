@@ -7,7 +7,8 @@ class Config(object):
     AUTH_USER = os.environ.get('AUTH_USERS','5680454765').split(',')
     AUTH_USERS = [int(user_id) for user_id in AUTH_USER]
     WEBHOOK = True  # Don't change this
-    PORT = int(os.environ.get("PORT", '8080'))  # Default to 8000 if not set
     HOST = "https://drm-api-six.vercel.app"
     CREDIT = "🇳‌🇮‌🇰‌🇭‌🇮‌🇱‌"#Here You Can Change with Your Name  or any custom name or title you prefer
+    port = int(os.environ.get('PORT', 8080))  # Default to 5000 for local testing
+    app.run(host='0.0.0.0', port=port)
 
