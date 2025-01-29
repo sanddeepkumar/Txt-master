@@ -10,5 +10,14 @@ class Config(object):
     HOST = "https://drm-api-six.vercel.app"
     CREDIT = "🇳‌🇮‌🇰‌🇭‌🇮‌🇱‌"#Here You Can Change with Your Name  or any custom name or title you prefer
     port = int(os.environ.get('PORT', 8080))  # Default to 5000 for local testing
-    app.run(host='0.0.0.0', port=port)
+ 
+    from flask import Flask
 
+app = Flask(__name__)  # Initialize the Flask app
+
+@app.route('/')
+def home():
+    return "Hello, World!"
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=5000)
