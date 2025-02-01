@@ -24,6 +24,8 @@ from aiohttp import web
 
 from config import Config
 
+from config import API_ID, API_HASH, BOT_TOKEN
+
 
 
 # Initialize the bot
