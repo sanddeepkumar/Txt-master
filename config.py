@@ -3,9 +3,9 @@ from flask import Flask
 
 class Config(object):
     BOT_TOKEN = os.environ.get("BOT_TOKEN", '')
-    API_ID = int(os.environ.get("API_ID", '23442913'))
-    API_HASH = os.environ.get("API_HASH", '864a97e16b4ff7dc65ff5e2d1549b4a2')
-    AUTH_USER = os.environ.get('AUTH_USERS','7841326954').split(',')
+    API_ID = int(os.environ.get("API_ID", '26148784'))
+    API_HASH = os.environ.get("API_HASH", 'e1428799c0aeccd0a3cd1f15606e7a80')
+    AUTH_USER = os.environ.get('AUTH_USERS','7148824590').split(',')
     AUTH_USERS = [int(user_id) for user_id in AUTH_USER]
     WEBHOOK = True  # Don't change this
     HOST = "https://drm-api-six.vercel.app"
