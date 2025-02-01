@@ -7,5 +7,5 @@ class Config(object):
     AUTH_USER = os.environ.get('AUTH_USERS','7841326954').split(',')
     AUTH_USERS = [int(user_id) for user_id in AUTH_USER]
     CREDIT = "🇳‌🇮‌🇰‌🇭‌🇮‌🇱‌"#Here You Can Change with Your Name  or any custom name or title you prefer
-    port = int(os.environ.get('PORT', 8080))  # Default to 8000 for local testing
-
+    #WEBHOOK = True  # Don't change this
+    #PORT = int(os.environ.get("PORT", 8080))  # Default to 8000 if not set
