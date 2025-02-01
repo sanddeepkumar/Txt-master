@@ -22,6 +22,8 @@ from tglogging import TelegramLogHandler
 
 from aiohttp import web
 
+from modules import config
+
 from config import config
 
 
