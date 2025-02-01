@@ -1,4 +1,6 @@
-FROM python:3.12.1
+#FROM python:3.9.7-slim-buster
+FROM python:3.10.8-slim-buster
+
 WORKDIR /app
 COPY . .
 RUN apt-get update && \
@@ -20,6 +22,4 @@ RUN wget -O Bento4-SDK.zip https://github.com/axiomatic-systems/Bento4/archive/r
     cp mp4decrypt /usr/local/bin/ && \
     cd ../.. && \
     rm -rf Bento4-SDK.zip Bento4-master
-Expose 8080
-CMD ["python", "./main.py"]
-CMD python3 main.py
+CMD gunicorn app:app & python3 modules/main.py
