@@ -10,3 +10,7 @@ bs4
 yt-dlp==2024.08.06
 flask
 gunicorn 
+pyrogram
+pyromod==1.5
+aiohttp
+ffmpeg 
