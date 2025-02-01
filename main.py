@@ -1,6 +1,6 @@
 import os
 
-from pyrogram import Client as AFK, idle
+from pyrogram import Client, idle
 
 from pyrogram.enums import ChatMemberStatus, ChatMembersFilter
 
@@ -48,7 +48,7 @@ plugins = dict(root="plugins")
 
 if __name__ == "__main__":
 
-    bot = bot(
+    bot = Client(
 
         "Bot",
 
